@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{491A4D7C-9DE0-4377-B5AA-260EA76D8F2F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Basit_Malzeme_Kayıt</RootNamespace>
+    <AssemblyName>Basit_Malzeme_Kayıt</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Işçi_Manipule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Işçi_Manipule.Designer.cs">
+      <DependentUpon>Işçi_Manipule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Işçi_Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Işçi_Panel.Designer.cs">
+      <DependentUpon>Işçi_Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IşçiKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IşçiKayıt.Designer.cs">
+      <DependentUpon>IşçiKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Işçi_Veri Değiştir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Işçi_Veri Değiştir.Designer.cs">
+      <DependentUpon>Işçi_Veri Değiştir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patron_Kayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patron_Kayıt.Designer.cs">
+      <DependentUpon>Patron_Kayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MalzemeManipulasyonu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MalzemeManipulasyonu.Designer.cs">
+      <DependentUpon>MalzemeManipulasyonu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bilgi_Değiştirme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bilgi_Değiştirme.Designer.cs">
+      <DependentUpon>Bilgi_Değiştirme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giriş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giriş.Designer.cs">
+      <DependentUpon>Giriş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Işçi_Giriş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Işçi_Giriş.Designer.cs">
+      <DependentUpon>Işçi_Giriş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullanıcıGiriş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullanıcıGiriş.Designer.cs">
+      <DependentUpon>KullanıcıGiriş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patron_Giriş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patron_Giriş.Designer.cs">
+      <DependentUpon>Patron_Giriş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patron_Panell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patron_Panell.Designer.cs">
+      <DependentUpon>Patron_Panell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Bakışatmak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bakışatmak.Designer.cs">
+      <DependentUpon>Bakışatmak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STOK3DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>STOK3DataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="IşçiKayıt.resx">
+      <DependentUpon>IşçiKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Işçi_Manipule.resx">
+      <DependentUpon>Işçi_Manipule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Işçi_Panel.resx">
+      <DependentUpon>Işçi_Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Işçi_Veri Değiştir.resx">
+      <DependentUpon>Işçi_Veri Değiştir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patron_Giriş.resx">
+      <DependentUpon>Patron_Giriş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patron_Kayıt.resx">
+      <DependentUpon>Patron_Kayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MalzemeManipulasyonu.resx">
+      <DependentUpon>MalzemeManipulasyonu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bilgi_Değiştirme.resx">
+      <DependentUpon>Bilgi_Değiştirme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giriş.resx">
+      <DependentUpon>Giriş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Işçi_Giriş.resx">
+      <DependentUpon>Işçi_Giriş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullanıcıGiriş.resx">
+      <DependentUpon>KullanıcıGiriş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patron_Panell.resx">
+      <DependentUpon>Patron_Panell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bakışatmak.resx">
+      <DependentUpon>Bakışatmak.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="STOK3DataSet.xsc">
+      <DependentUpon>STOK3DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="STOK3DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>STOK3DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="STOK3DataSet.xss">
+      <DependentUpon>STOK3DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
